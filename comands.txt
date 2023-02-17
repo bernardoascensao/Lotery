@@ -1,0 +1,11 @@
+
+git init        //para criar um novo repostitório!!!!
+
+
+git add .           //addicionar TODOS ao git
+
+
+git commit -m "change title to red"     //parar no tempo (pacheco)
+
+
+git push -u origin main         //para mandar para o GiHub
