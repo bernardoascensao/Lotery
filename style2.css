@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Prompt:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #282828;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 400px;
+}
+
+header img{
+    width: 78px;
+}
+
+.tittle{
+    color: #FFFFFF;
+    font-family: 'Prompt';
+    font-size: 64px;
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    align-items: center;
+    font-family: 'Inter';
+    font-size: 50px;
+    gap: 50px;
+}
+
+h2{
+   font-weight: 600; 
+}
+
+.texts p{
+    font-weight: 500;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 90px;
+}
+
+.buttons .MyBetButton{
+    background-color: #A7EEA6;
+    color: #F7F7F7;
+    font-family: 'Inter';
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.buttons .RandomButton{
+    background-color: #F68D9A;
+    color: #F7F7F7;
+    font-family: 'Inter';
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.RandomButton:hover{
+    background-color: #F11D37;
+}
+
+.MyBetButton:hover{
+    background-color: #60D85D;
+}
+
+.buttons button{
+    width: 425px;
+    height: 127px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}

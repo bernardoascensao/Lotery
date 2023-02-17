@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Prompt:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header{
+    background-color: #282828;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    gap: 400px;
+}
+
+.tittle{
+    color: #FFFFFF;
+    font-family: 'Prompt';
+    font-size: 64px;
+}
+
+header img{
+    width: 78px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 280px;
+}
+
+.text{
+    width: 544px;
+    font-family: 'Prompt';
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #000000;
+    font-size: 64px;
+    text-align: center;
+}
+
+.bar2{
+    display: flex;
+    flex-direction: row;
+    
+    background-color: #D9D9D9;
+    justify-content: center;
+    width: 544px;
+    border-radius: 15px;
+    height: 70px;
+}
+
+.nameInput{
+    margin: 10px;
+    background-color: #ECECEC;
+    border: none;
+    border-radius: 15px;
+    width: 321px;
+    padding: 10px;
+    font-size: 19px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+
+}
+
+.button{
+    background-color: #96BCF4;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    width: 175px;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+
+.button:hover{
+    background-color: cadetblue;
+}
+

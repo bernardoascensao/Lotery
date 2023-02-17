@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Prompt:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: #282828;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 400px;
+}
+
+.header .h1{
+    color: white;
+    font-family: 'Prompt';
+    font-size: 64px;
+}
+
+.header img{
+    width: 77px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px ;
+    row-gap: 150px;
+}
+
+.main .text-tittle{
+    font-family: 'Inter';
+    font-size: 50px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+.main .stats{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    column-gap: 00px;
+    height: 480px;
+}
+
+.keys, .stars{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 140px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 45px;
+    width: 500px;
+}
+
+.stars{
+    column-gap: 120px;
+}
+.starsParent{
+    padding-left: 100px;
+    
+}
+.keys{
+    padding-right: 100px;
+    border-right: 2px solid black;
+}
+.h2, .h3, .h4, .h5, .h6{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 33px;
+}
+
+p{
+    font-size: 24px;
+}
+
+.paragraphs-ustar,
+ .paragraphs-wstar,
+  .paragraphs-ukey,
+   .paragraphs-wkey{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    row-gap: 30px;
+}
+
+.paragraphs-ukey .ukey{
+    text-align:center;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 100%;
+    background-color: #E15050;
+}
+
+.paragraphs-wkey .wkey{
+    text-align:center;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 100%;
+    background-color: #45C559;
+}
+.paragraphs-wstar .wstar{
+    text-align:center;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 100%;
+    background-color: #91DC16;
+}
+
+.paragraphs-ustar .ustar{
+    text-align:center;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 100%;
+    background-color: #96BCF4;
+}
+
+.button{
+    background-color: #5DAF60;
+    border: none;
+    width: 312px;
+    height: 86px;
+    border-radius: 15px;
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 700;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 213px;
+    margin-left: 190px;
+}
+
+button:hover{
+    background-color: #0a871c;
+}
+
+.blue{
+    color: #52A8C3;
+}
+
+.green{
+    color: #5DAF60;
+}

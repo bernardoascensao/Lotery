@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple and funny Lotery Game">
+    <link rel="stylesheet" href="style3.css">
+    <title>LoteryGame</title>
+</head>
+<body>
+
+    <!-- <audio src="resources/musicBabyJB.mp3" autoplay loop ></audio> -->
+    <header class="header">
+        <img src="resources/casa.png" alt="Home img">
+        <h1 class="h1">Lotery</h1>
+        <img src="resources/barras.png" alt="Bars img">
+    </header>
+
+    <main class="main">
+        <h2 class="h2">Write Down Your Bet</h2>
+
+        <div class="keys">
+            <label for="key1">Key<strong>1</strong></label>
+            <label for="key2">Key<strong>2</strong></label>
+            <label for="key3">Key<strong>3</strong></label>
+            <label for="key4">Key<strong>4</strong></label>
+            <label for="key5">Key<strong>5</strong></label>
+            
+            <div><input type="number" id="key1" placeholder="Key1" class="key1" min="0" max="50"></div>
+            <div><input type="number" id="key2" placeholder="Key2"class="key2" min="0" max="50"></div>
+            <div><input type="number" id="key3" placeholder="Key3"class="key3" min="0" max="50"></div>
+            <div><input type="number" id="key4" placeholder="Key4"class="key4" min="0" max="50"></div>
+            <div><input type="number" id="key5" placeholder="Key5"class="key5" min="0" max="50"></div>
+        </div>
+
+        <div class="stars">
+            <label for="star1">Star<strong>1</strong></label>
+            <label for="star2">Star<strong>2</strong></label>
+            <div><input type="number" id="star1" placeholder="Star1" class="star1" min="0" max="12"></div>
+            <div><input type="number" id="star2" placeholder="Star2" class="star2" min="0" max="12"></div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <button id='quitButton' class="quit-button">Quit</button>
+        <button id="submitButton" class="submit-button">Submit</button>
+    </footer>
+
+
+    <script src="app3.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Prompt:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.header{
+    background-color: #282828;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 400px;
+}
+
+.h1{
+    color: white;
+    font-family: 'Prompt';
+    font-size: 64px;
+}
+
+.header img{
+    width: 77px;
+}
+
+.main{
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.main .h2{
+    font-family: 'Inter';
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.main .keys{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 100px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.main .keys div{
+    background-color: #5A93E9;
+    padding: 10px;
+    border-radius: 15px;
+    width: 115px;
+}
+
+.main .keys div input{
+    height: 45px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    width: 115px;
+    height: 45px;
+    text-align: center;
+}
+
+.main .stars{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 150px;
+    row-gap: 5ox;
+    text-align: center;
+}
+
+.main .stars div{
+    background-color: #DFE250;
+    padding: 10px;
+    border-radius: 15px;
+    height: 45px;
+    width: 115px;
+}
+
+.main .stars div input{
+    border: none;
+    width: 115px;
+    height: 45px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 15px;
+}
+
+.footer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.footer button{
+    border: none;
+    width: 312px;
+    height: 86px;
+    border-radius: 15px;
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 700;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.footer .submit-button:hover{
+    background-color: #158713 ;
+}
+
+footer .quit-button:hover{
+    background-color: #7A0A18;
+}
+
+.quit-button{
+    background-color: #F11D37;
+}
+
+.submit-button{
+    background-color: #60D85D;
+}
+
+label{
+    font-family: 'Inter';
+    font-size: 22px;
+}
