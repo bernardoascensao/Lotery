@@ -32,13 +32,17 @@ for(let i = 1; stars.length < 12; i++){
 
 
 submitButton.addEventListener('click', () => {
-
+                                                        /*have to create arrays only when the 
+                                                        /user click 'submit' button, otherwise the array will have NaN values */
     const userKeys = [parseInt(key1.value), parseInt(key2.value), parseInt(key3.value), parseInt(key4.value), parseInt(key5.value)];
     const userStars = [parseInt(star1.value), parseInt(star2.value)];
-    
+
                                                         //verify if all fields are filled
     if(userKeys.includes(NaN) || userStars.includes(NaN)){
         alert('Preenche todos os campos!');
+    }
+    else if(!areValidNumbers()){
+        alert('Preenche os campos com valores válidos');
     }
     else{                                               //in case of every fields are filled,
                                                         //save the data in local storage and chande to next page
@@ -56,7 +60,17 @@ quitButton.addEventListener('click', () => {
 
     window.location = 'index2.html';
 })
+                                                    //functions
+function areValidNumbers(){
 
+    const userKeys = [parseInt(key1.value), parseInt(key2.value), parseInt(key3.value), parseInt(key4.value), parseInt(key5.value)];
+    const userStars = [parseInt(star1.value), parseInt(star2.value)];
+
+    const validKeys = userKeys.filter(key => { return(key < 51); });
+    const validStars = userStars.filter(star => { return(star < 13); });
+
+    return (validKeys.length === 5 && validStars.length === 2);
+}
 function reloadLocalStorage(){
     localStorage.removeItem('winner-keys');
     localStorage.removeItem('winner-stars');

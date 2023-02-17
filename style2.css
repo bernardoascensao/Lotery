@@ -7,12 +7,12 @@
 
 header{
     background-color: #282828;
-    padding: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    gap: 400px;
+    padding: 1rem;
+    justify-content: space-between;
+    gap: 0 2rem;
 }
 
 header img{

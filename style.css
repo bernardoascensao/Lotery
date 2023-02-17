@@ -16,18 +16,15 @@ header{
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
-    gap: 400px;
     height: 5rem;
 }
-
 .tittle{
     color: #FFFFFF;
     font-family: 'Prompt';
-    font-size: 64px;
+    font-size: 4rem;
 }
-
 header img{
-    width: 78px;
+    width: 5rem;
 }
 
 main{
@@ -39,33 +36,33 @@ main{
 }
 
 .text{
-    width: 544px;
+    width: calc(100vw - 2rem);
     font-family: 'Prompt';
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #000000;
-    font-size: 64px;
+    font-size: 4rem;
     text-align: center;
 }
 
 .bar2{
     display: flex;
     flex-direction: row;
-    
+    width: 34rem;
     background-color: #D9D9D9;
     justify-content: center;
-    width: 544px;
+
     border-radius: 15px;
     height: 70px;
 }
 
 .nameInput{
-    margin: 10px;
+    margin: 0.625rem;
     background-color: #ECECEC;
     border: none;
-    border-radius: 15px;
-    width: 321px;
-    padding: 10px;
-    font-size: 19px;
+    border-radius: 0.9375rem;
+    width: 20.0625rem;
+    padding: 0.625rem;
+    font-size: 1.1875rem;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 
@@ -73,13 +70,13 @@ main{
 
 .button{
     background-color: #96BCF4;
-    margin: 10px;
+    margin: 0.625rem;
     border: none;
-    border-radius: 15px;
-    width: 175px;
+    border-radius: 0.9375rem;
+    width: 10.9375rem;
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
-    font-size: 19px;
+    font-size: 1.1875rem;
     font-weight: 700;
     text-transform: capitalize;
     cursor: pointer;
@@ -90,3 +87,13 @@ main{
     background-color: cadetblue;
 }
 
+@media screen and (max-width: 565px) {
+    .tittle{ font-size: 3rem;}
+    header img{ width: 4rem;}
+    main{ margin-top: -2rem;}
+    .text{ font-size: 2.5rem;  }
+    .bar2{ width: 20.9rem;}
+    .nameInput{ width: 15rem; margin-right: 0.5rem; margin-left: 0; font-size: 0.95rem;}
+    .button{ width:3rem; margin-left: 0; margin-right: 0; font-size: 0.9rem; padding-left: 0.125rem; padding-right: 0.125rem; }
+
+  }
