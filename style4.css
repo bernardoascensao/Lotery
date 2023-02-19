@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Prompt:wght@500&display=swap');
-
+html{
+    width: 100%;
+    height: 100%;
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,18 +14,16 @@
     flex-direction: row;
     align-items: center;
     padding: 1rem;
-    justify-content: space-between;
-    gap: 0 2rem;
+    justify-content: space-around;
+    height: 5rem;
 }
-
-.header .h1{
-    color: white;
+.h1{
+    color: #FFFFFF;
     font-family: 'Prompt';
-    font-size: 64px;
+    font-size: 4rem;
 }
-
 .header img{
-    width: 77px;
+    width: 5rem;
 }
 
 .main{
@@ -30,72 +31,73 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 80px ;
-    row-gap: 150px;
+    margin-top: 5rem ;
+    row-gap: 9.37rem;
 }
-
 .main .text-tittle{
     font-family: 'Inter';
-    font-size: 50px;
+    font-size: 3.12rem;
     font-weight: 600;
     color: black;
     text-align: center;
 }
+
 .main .stats{
     display: flex;
     flex-direction: row;
     align-items: top;
     justify-content: center;
-    column-gap: 00px;
-    height: 480px;
+    height: 30rem;
 }
 
 .keys, .stars{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    column-gap: 140px;
+    column-gap: 8.75rem;
     font-family: 'Inter';
     font-weight: 500;
-    font-size: 45px;
-    width: 500px;
+    font-size: 2.81rem;
+    width: 31.25rem;
 }
-
 .stars{
-    column-gap: 120px;
+    column-gap: 7.5rem;
 }
 .starsParent{
-    padding-left: 100px;
-    
+    padding-left: 6.25rem;
 }
+
 .keys{
-    padding-right: 100px;
-    border-right: 2px solid black;
+    padding-right: 6.25rem;
+    border-right: 0.12rem solid black;
 }
-.h2, .h3, .h4, .h5, .h6{
+
+.h{
     font-family: 'Inter';
     font-weight: 500;
-    font-size: 33px;
+    font-size: 2rem;
 }
 
 p{
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .paragraphs-ustar,
  .paragraphs-wstar,
   .paragraphs-ukey,
    .paragraphs-wkey{
-    margin-top: 40px;
+    margin-top: 2.5rem;
     display: grid;
     grid-template-columns: 2fr 2fr ;
-    row-gap: 30px;
+    row-gap: 1.87rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .paragraphs-ukey .ukey{
-    text-align:center;
-    width: 35px;
-    height: 35px;
+    text-align: center;
+    width: 2.18rem;
+    height: 2.18rem;
     border: none;
     border-radius: 100%;
     background-color: #E15050;
@@ -103,16 +105,16 @@ p{
 
 .paragraphs-wkey .wkey{
     text-align:center;
-    width: 35px;
-    height: 35px;
+    width: 2.18rem;
+    height: 2.18rem;
     border: none;
     border-radius: 100%;
     background-color: #45C559;
 }
 .paragraphs-wstar .wstar{
     text-align:center;
-    width: 35px;
-    height: 35px;
+    width: 2.18rem;
+    height: 2.18rem;
     border: none;
     border-radius: 100%;
     background-color: #91DC16;
@@ -120,8 +122,8 @@ p{
 
 .paragraphs-ustar .ustar{
     text-align:center;
-    width: 35px;
-    height: 35px;
+    width: 2.18rem;
+    height: 2.18rem;
     border: none;
     border-radius: 100%;
     background-color: #96BCF4;
@@ -130,26 +132,50 @@ p{
 .button{
     background-color: #5DAF60;
     border: none;
-    width: 312px;
-    height: 86px;
-    border-radius: 15px;
+    width: 19.5rem;
+    height: 5.37rem;
+    border-radius: 1rem;
     font-family: 'Inter';
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: 700;
     color: #FFFFFF;
     cursor: pointer;
-    margin-top: 213px;
-    margin-left: 190px;
+    margin-top: 13.3rem;
+    margin-left: 11.87rem;
 }
-
 button:hover{
     background-color: #0a871c;
+}
+@media screen and (max-width: 1210px){
+    .h1{font-size: 3rem;}
+    .header img{ width: 4rem;}
+
+    .main{row-gap: 7rem;}
+    .main .text-tittle{ font-size: 2.8rem;}
+    .starsParent{ padding-left: 1.5rem; width: calc(19.5rem + 8rem);}
+    .keys{padding-right: 1.5rem; column-gap: 1rem;}
+    .stars{column-gap: 1rem; width: 100%;}
+    .button{margin-left: 8rem;}
+    .h{font-size: 1.7rem;}
+    p{font-size: 1.3rem;}
+}
+
+@media screen and (max-width: 990px){
+    /* .h1{font-size:2rem ;}
+    .header img{ width:3rem ;} */
+
+    .main{row-gap: 4rem;}
+    .main .text-tittle{ font-size: 2rem;}
+    .starsParent{ padding-left: 1rem; width: calc(13rem + 5rem);}
+    .keys{padding-right: 1rem; width: 18rem;}
+    .button{margin-left: 5rem; width: 13rem; height: 4rem; font-size: 1.3rem;}
+    .h{font-size: 1.5rem;}
+    
 }
 
 .blue{
     color: #52A8C3;
 }
-
 .green{
     color: #5DAF60;
 }

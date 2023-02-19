@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Prompt:wght@500&display=swap');
-
+html{
+    width: 100%;
+    height: 100%;
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,36 +14,35 @@ header{
     flex-direction: row;
     align-items: center;
     padding: 1rem;
-    justify-content: space-between;
-    gap: 0 2rem;
+    justify-content: space-around;
+    height: 5rem;
 }
-
-header img{
-    width: 78px;
-}
-
-.tittle{
+.title{
     color: #FFFFFF;
     font-family: 'Prompt';
-    font-size: 64px;
+    font-size: 4rem;
+}
+header img{
+    width: 5rem;
 }
 
 .texts{
     display: flex;
     flex-direction: column;
-    margin-top: 110px;
+    margin-top: 10rem;
     align-items: center;
     font-family: 'Inter';
-    font-size: 50px;
-    gap: 50px;
+    font-size: 3.125rem;
+    row-gap: 3.125rem;
+    
 }
-
 h2{
-   font-weight: 600; 
+    font-size: 4.5rem;
+    font-weight: 600; 
 }
-
 .texts p{
     font-weight: 500;
+    font-size: 3.5rem;
 }
 
 .buttons{
@@ -48,25 +50,31 @@ h2{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 90px;
+    gap: 2rem;
+    margin-top: 5.625rem;
+}
+.buttons button{
+    width: 26.5rem;
+    height: 7.93rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 3.125rem;
+    font-weight: 600;
 }
 
 .buttons .MyBetButton{
     background-color: #A7EEA6;
     color: #F7F7F7;
     font-family: 'Inter';
-    font-size: 50px;
-    font-weight: 600;
+    
 }
 
 .buttons .RandomButton{
     background-color: #F68D9A;
     color: #F7F7F7;
     font-family: 'Inter';
-    font-size: 50px;
-    font-weight: 600;
+    
 }
 
 .RandomButton:hover{
@@ -76,11 +84,12 @@ h2{
 .MyBetButton:hover{
     background-color: #60D85D;
 }
-
-.buttons button{
-    width: 425px;
-    height: 127px;
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
+@media screen and (max-width: 700px){
+    .title{ font-size: 3rem;}
+    header img{ width: 4rem;}
+    
+    .texts h2{ font-size: 2.3rem;}
+    .texts p{ font-size: 2.1rem;}
+    .buttons button{ width: 10rem; height: 3rem; font-size: 1.4rem;}
 }
+

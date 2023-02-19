@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Prompt:wght@500&display=swap');
+html{
+    width: 100%;
+    height: 100%;
+}
 
 *{
     margin: 0;
@@ -12,125 +16,169 @@
     flex-direction: row;
     align-items: center;
     padding: 1rem;
-    justify-content: space-between;
-    gap: 0 2rem;
+    justify-content: space-around;
+    height: 5rem;
 }
-
 .h1{
     color: white;
     font-family: 'Prompt';
-    font-size: 64px;
+    font-size: 4rem;
 }
-
 .header img{
-    width: 77px;
+    width: 5rem;
 }
 
 .main{
-    margin-top: 110px;
+    margin-top: 6.87rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    gap: 50px;
+    gap: 3rem;
 }
 
 .main .h2{
     font-family: 'Inter';
-    font-size: 70px;
+    font-size: 4rem;
     font-weight: 500;
 }
+
 
 .main .keys{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    row-gap: 5px;
-    column-gap: 100px;
+    row-gap: 0.3125rem;
+    column-gap: 6.25rem;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
 
+.keys label{                                /*1.25 é 2*pading dos div em baixo*/
+    width: calc(1.25rem + 7.1875rem); 
+}
 .main .keys div{
     background-color: #5A93E9;
-    padding: 10px;
-    border-radius: 15px;
-    width: 115px;
+    padding: 0.625rem;
+    border-radius: 1rem;
+    width: 7.1875rem;
 }
 
 .main .keys div input{
-    height: 45px;
+    /* height: 3rem; */
     border: none;
-    border-radius: 15px;
-    font-size: 20px;
+    border-radius: 1rem;
+    font-size: 1.25rem;
     font-family: 'Inter', sans-serif;
-    width: 115px;
-    height: 45px;
+    width: 7.1875rem;
+    height: 2.8rem;
     text-align: center;
 }
+
 
 .main .stars{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 150px;
-    row-gap: 5ox;
+    column-gap: 9.375rem;
+    row-gap: 0.3rem;
     text-align: center;
 }
 
 .main .stars div{
     background-color: #DFE250;
-    padding: 10px;
-    border-radius: 15px;
-    height: 45px;
-    width: 115px;
+    padding: 0.625rem;
+    border-radius: 1rem;
+    /* height: 45px; */
+    width: 7.1875rem;
 }
 
 .main .stars div input{
     border: none;
-    width: 115px;
-    height: 45px;
+    width: 100%;
+    height: 2.8rem;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: 'Inter', sans-serif;
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 
+
 .footer{
-    margin-top: 100px;
+    margin-top: 6.25rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 100px;
+    gap: 6.25rem;
 }
 
 .footer button{
     border: none;
-    width: 312px;
-    height: 86px;
-    border-radius: 15px;
+    width: 19.5rem;
+    height: 5.37rem;
+    border-radius: 1rem;
     font-family: 'Inter';
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #FFFFFF;
     cursor: pointer;
 }
 
-.footer .submit-button:hover{
+.footer #submitButton:hover{
     background-color: #158713 ;
 }
 
-footer .quit-button:hover{
+footer #quitButton:hover{
     background-color: #7A0A18;
 }
 
-.quit-button{
+#quitButton{
     background-color: #F11D37;
 }
 
-.submit-button{
+#submitButton{
     background-color: #60D85D;
 }
 
 label{
     font-family: 'Inter';
-    font-size: 22px;
+    font-size: 1.48rem;
 }
+@media screen and (max-width: 1080px){
+    .h1{font-size: 3rem;}
+    .header img{ width: 4rem;}
+    
+    .main{gap: 2rem;}
+    .main .h2{ font-size: 3rem;}
+    .main .keys{ column-gap: 4rem}
+    .keys label{ width: calc(5rem + 1.25rem) ;}
+    .main .keys div{ width: 5rem ;}
+    .main .keys div input{ width: 100%; }
+
+    .stars label{ width: calc(5rem 1.25rem) ;}
+    .main .stars div{ width: 5rem ; }
+    .main .stars div input{ width: 100%;} 
+
+    .footer button{ width: 16rem;}
+
+    label{font-size: 1.1rem;}
+
+}
+@media screen and (max-width: 760px){
+    .h1{font-size: 3rem;}
+    .header img{ width: 4rem;}
+    
+    .main{gap: 2rem;}
+    .main .h2{ font-size: 1.9rem;}
+    .main .keys{ column-gap: 0.9rem; margin-bottom: 2.7rem;}
+    .keys label{ width: calc(3rem + 0.9rem); font-size: 1rem;}
+    .main .keys div{ width: 3rem; padding: 0.45rem;}
+    .main .keys div input{ width: 100%; font-size: 1rem; }
+
+    .stars label{ width: calc(3rem 0.9rem); font-size: 1rem;}
+    .main .stars div{ width: 3rem; padding: 0.45rem; }
+    .main .stars div input{ width: 100%; font-size: 1rem;}
+    
+    .footer{margin-top:5.5rem ;}
+    .footer button{width: 10rem; height: 3rem; font-size: 1.4rem;}
+
+}
+
