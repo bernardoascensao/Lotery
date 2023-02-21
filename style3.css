@@ -164,18 +164,18 @@ label{
 }
 @media screen and (max-width: 760px){
     .h1{font-size: 3rem;}
-    .header img{ width: 4rem;}
+    .header img{ width:2.7rem ;}
     
     .main{gap: 2rem;}
     .main .h2{ font-size: 1.9rem;}
     .main .keys{ column-gap: 0.9rem; margin-bottom: 2.7rem;}
     .keys label{ width: calc(3rem + 0.9rem); font-size: 1rem;}
     .main .keys div{ width: 3rem; padding: 0.45rem;}
-    .main .keys div input{ width: 100%; font-size: 1rem; }
+    .main .keys div input{ width: 100%; font-size: 0.85rem; }
 
     .stars label{ width: calc(3rem 0.9rem); font-size: 1rem;}
     .main .stars div{ width: 3rem; padding: 0.45rem; }
-    .main .stars div input{ width: 100%; font-size: 1rem;}
+    .main .stars div input{ width: 100%; font-size: 0.85rem;}
     
     .footer{margin-top:5.5rem ;}
     .footer button{width: 10rem; height: 3rem; font-size: 1.4rem;}
