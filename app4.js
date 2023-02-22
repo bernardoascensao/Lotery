@@ -39,6 +39,21 @@ else{
     document.querySelector('.text-tittle').innerHTML = 'Keep trying'
 }
 
+function turnGreen(number){
+
+    const element = document.querySelector('#uk'+number+'');
+
+    element.classList.remove('ukey');
+    element.classList.add('ukeyGreen');
+}
+
+function turnYellow(number){
+
+    const element =document.querySelector('#us'+number+'');
+
+    element.classList.remove('ustar');
+    element.classList.add('usYellow');
+}
 function checkEquals(){
     const equalKeys = [];
     const equalStars = [];
@@ -47,6 +62,7 @@ function checkEquals(){
 
         if(userKeys[i] == winnerKeys[i]){
             equalKeys.push(userKeys[i]);
+            turnGreen(i+1);
         }
     }
  
@@ -54,6 +70,7 @@ function checkEquals(){
 
         if(userStars[i] == winnerStars[i]){
             equalStars.push(userStars[i]);
+            turnYellow(i+1);
         }
     }
     if(equalKeys.length === 5 && equalStars.length === 2){
