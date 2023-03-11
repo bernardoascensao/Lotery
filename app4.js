@@ -8,31 +8,33 @@ const userStars = localStorage.getItem('user-stars').split(',');
 const winnerKeys = localStorage.getItem('winner-keys').split(','); 
 const winnerStars = localStorage.getItem('winner-stars').split(',');
 
-if(checkEquals() === 52){
+const checkEqualsNumbers = checkEquals();
+
+if(checkEqualsNumbers === 52){
     document.querySelector('.text-tittle').innerHTML = 'Congratulations! You Won!';
 }
-else if(checkEquals() === 42){
+else if(checkEqualsNumbers === 42){
     document.querySelector('.text-tittle').innerHTML = 'Congratulations! Second Place!';
 }
-else if(checkEquals() === 32){
+else if(checkEqualsNumbers === 32){
     document.querySelector('.text-tittle').innerHTML = 'Congratulations! Third Place!';
 }
-else if(checkEquals() === 51){
+else if(checkEqualsNumbers === 51){
     document.querySelector('.text-tittle').innerHTML = 'Congratulations! Just 1 Star Missing!';
 }
-else if(checkEquals() === 41){
+else if(checkEqualsNumbers === 41){
     document.querySelector('.text-tittle').innerHTML = 'Congratulations! Just 1 Star and 1 Key Missing!';
 }
-else if(checkEquals() === 31){
+else if(checkEqualsNumbers === 31){
     document.querySelector('.text-tittle').innerHTML = 'Congratulations! Almost There!';
 }
-else if(checkEquals() === 50){
+else if(checkEqualsNumbers === 50){
     document.querySelector('.text-tittle').innerHTML = 'Congratulations! All the Keys!';
 }
-else if(checkEquals() === 40){
+else if(checkEqualsNumbers === 40){
     document.querySelector('.text-tittle').innerHTML = "Congratulations! You're Learning!";
 }
-else if(checkEquals() === 30){
+else if(checkEqualsNumbers === 30){
     document.querySelector('.text-tittle').innerHTML = "WOW! 3 Keys, You're on Fire!";
 }
 else{
@@ -60,15 +62,16 @@ function checkEquals(){
 
     for(let i = 0; i < userKeys.length; i++){
 
-        if(userKeys[i] == winnerKeys[i]){
+        if(winnerKeys.includes(userKeys[i])){
             equalKeys.push(userKeys[i]);
             turnGreen(i+1);
+            console.log(equalKeys, i);
         }
     }
  
     for(let i = 0; i < userStars.length; i++){
 
-        if(userStars[i] == winnerStars[i]){
+        if(winnerStars.includes(userStars[i])){
             equalStars.push(userStars[i]);
             turnYellow(i+1);
         }
